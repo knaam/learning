@@ -13,7 +13,7 @@ class Employee(object):
 
 
 	def apply_raise(self):
-		return Employee.annual_raise * self.pay
+		return self.annual_raise * self.pay
 
 	def __str__(self):
 		return self.first_name
