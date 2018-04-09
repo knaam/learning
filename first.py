@@ -37,4 +37,40 @@ class Employee(object):
 		if num == 23:
 			return True
 		return False
+
+
+#inheritance added by ursh
+
+
+#Manager and developer class
+class Developer(Employee):
+	annual_raise = 9
+
+	def __init__(self,first_name,last_name,pay, lang):
+		super().__init__(first_name, last_name, pay)
+		self.lang = lang
+
+
+class Manager(Employee):
+	def __init__(self, first_name,last_name,pay, employees=None):
+		super().__init__(first_name, last_name, pay)
+		if employees is None:
+			self.employees = []
+		else:
+			self.employees = employees
+
+	def add_employee(self, emp):
+		if emp not in self.employees:
+			self.employees.append(emp)
+
+	def remove_employee(self, emp):
+		if emp in self.employees:
+			self.employees.remove(emp)
+
+	def print_emp(self):
+		for em in self.employees:
+			print('----->', em)
+
+	
 		
+
