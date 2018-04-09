@@ -8,9 +8,20 @@ class Employee(object):
 	def __init__(self, first_name, last_name, pay):
 		self.first_name = first_name
 		self.last_name = last_name
-		self.email = '{}.{}@gamil.com'.format(first_name, last_name)
+		#self.email = '{}.{}@gamil.com'.format(first_name, last_name)
 		self.pay = pay
 
+
+	@property
+	def email(self):
+		return ('{}{}.email.com'.format(self.first_name, self.last_name))
+
+	@property
+	def full_name(self):
+		return ('{} {}'.format(self.first_name, self.last_name))
+	@full_name.setter
+	def full_name(self, new_name):
+		self.first_name, self.last_name = new_name.split(' ')
 
 	def apply_raise(self):
 		return self.annual_raise * self.pay
@@ -37,7 +48,6 @@ class Employee(object):
 		if num == 23:
 			return True
 		return False
-
 
 #inheritance added by ursh
 
