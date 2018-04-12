@@ -93,3 +93,5 @@ class Manager(Employee):
 
 
 """All the hotfix codes were written here..... """
+
+"""This is the codes from 'hotfix-branch-v2' branch """
