@@ -87,3 +87,6 @@ class Manager(Employee):
 #This will mark the changes from the original author
 
 #Small changes from hotfix branch ; author: Knaam 
+
+
+#Proposed new changes here; author: Knaam
