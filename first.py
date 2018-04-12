@@ -90,3 +90,4 @@ class Manager(Employee):
 
 
 #Proposed new changes here; author: Knaam
+#Proposed change NO.2 ; author: Knaam
