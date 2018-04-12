@@ -92,3 +92,4 @@ class Manager(Employee):
 #Simulate merge conflict here and I have also added these line here. 
 
 
+"""All the hotfix codes were written here..... """
