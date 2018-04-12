@@ -87,3 +87,4 @@ class Manager(Employee):
 #This will mark the changes from the original author
 
 #Simulate merge conflict here
+#imulate merge conflict here step 1
