@@ -85,7 +85,10 @@ class Manager(Employee):
 		
 
 #This will mark the changes from the original author
+
 #Some changes here as well
 #This is the line added by master branch --
-
 #I also add this here 
+#Simulate merge conflict here and I have also added these line here. 
+
+
